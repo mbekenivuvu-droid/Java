@@ -1,9 +1,11 @@
-let numbers = [1, 2, 3, 4, 5] 
+let numbers = [1, 2, 3, 4, 5];
 
-for (let m=1; m<=5; m++) {
-  console.log(m)
+console.log("Array numbers:")
+for (let a = 1; a <= 5; a++) {
+  console.log(a);
 }
 
+console.log("Count down:")
 let counter = 5;
 
 while (counter>=1) {
@@ -11,6 +13,17 @@ while (counter>=1) {
   counter--;
 }
 
-let num = 2;
+console.log("Even numbers:")
+for (let b = 0; b < numbers.length; b++) {
+  if (numbers[b] % 2 === 0) {
+    console.log(numbers[b]);
+  }
+}
 
-while(num <=)
+let sum = 0;
+
+for (let c = 0; c < numbers.length; c++){
+  sum += numbers[c];
+} 
+
+console.log("Sum:", sum);
